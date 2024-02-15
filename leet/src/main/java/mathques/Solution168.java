@@ -8,9 +8,9 @@ public class Solution168 {
     	
     	while(columnNumber>0) {
     		columnNumber--;
-    		int a=columnNumber%27;
+    		int a=columnNumber%26;
     		sb.insert(0, (char)('A' + a));
-    		columnNumber=columnNumber/27;
+    		columnNumber=columnNumber/26;
     	}
         return sb.toString();
     }
