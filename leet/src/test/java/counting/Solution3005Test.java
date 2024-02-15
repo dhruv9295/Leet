@@ -9,6 +9,8 @@ import static org.mockito.Mockito.when;
 
 public class Solution3005Test {
 
+	
+	//JUNIT
     @Test
     public void testMaxFrequencyElements() {
         Solution3005 solution = new Solution3005();
@@ -23,17 +25,15 @@ public class Solution3005Test {
 
     }
     
+    //Mockito
     @Test
     public void testMaxFrequencyElementsMock() {
         // Mock the Solution class
         Solution3005 solution = mock(Solution3005.class);
-
-
+        
         int[] nums = {1, 2, 2, 3, 1, 4};
-
         when(solution.maxFrequencyElements(new int[]{1, 2, 2, 3, 1, 4})).thenCallRealMethod();
         //or use thenReturn
-
         assertEquals(4, solution.maxFrequencyElements(new int[]{1, 2, 2, 3, 1, 4}));
     }
 }
