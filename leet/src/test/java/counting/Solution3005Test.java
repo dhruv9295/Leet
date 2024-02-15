@@ -7,11 +7,11 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 
-public class SolutionTest {
+public class Solution3005Test {
 
     @Test
     public void testMaxFrequencyElements() {
-        Solution solution = new Solution();
+        Solution3005 solution = new Solution3005();
         int[] nums = {1, 2, 2, 2, 3, 3, 4, 4, 4, 4};
         assertNotEquals(8, solution.maxFrequencyElements(nums));
 
@@ -26,7 +26,7 @@ public class SolutionTest {
     @Test
     public void testMaxFrequencyElementsMock() {
         // Mock the Solution class
-        Solution solution = mock(Solution.class);
+        Solution3005 solution = mock(Solution3005.class);
 
 
         int[] nums = {1, 2, 2, 3, 1, 4};
