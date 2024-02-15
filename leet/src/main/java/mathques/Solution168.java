@@ -1,4 +1,4 @@
-package math;
+package mathques;
 class Solution168 {
     public String convertToTitle(int columnNumber) {
 		
