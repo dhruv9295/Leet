@@ -1,6 +1,6 @@
 package counting;
 
-class Solution3005 {
+public class Solution3005 {
 	public int maxFrequencyElements(int[] nums) {
 		int[] count = new int[100];
 		int max = 0;

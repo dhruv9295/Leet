@@ -1,19 +1,17 @@
 package mathques;
-class Solution168 {
+public class Solution168 {
     public String convertToTitle(int columnNumber) {
 		
     	StringBuilder sb = new StringBuilder();
     	
-    	int a=0;
+
     	
-    	while(columnNumber>26) {
-    		a = columnNumber/26;
-    		if (a>0) {
-    		sb.append((char)a);
+    	while(columnNumber>0) {
+    		columnNumber--;
+    		int a=columnNumber%27;
+    		sb.insert(0, (char)('A' + a));
+    		columnNumber=columnNumber/27;
     	}
-    		columnNumber = columnNumber/26;
-    	}
-    	
         return sb.toString();
     }
 }

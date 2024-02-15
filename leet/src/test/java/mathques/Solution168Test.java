@@ -7,30 +7,36 @@ import static org.mockito.Mockito.when;
 
 import org.junit.Test;
 
-import mathques.Solution168;
 
 
 
 public class Solution168Test {
 
 	
-	//JUNIT
-    @Test
-    public void testMaxFrequencyElements() {
-        Solution168 solution = new Solution168();
-        int nums = 27;
-        assertNotEquals("AA", solution.convertToTitle(nums));
-    }
+
     
     //Mockito
     @Test
-    public void testMaxFrequencyElementsMock() {
+    public void testMock() {
         // Mock the Solution class
+    	int nums = 1;
     	Solution168 solution = mock(Solution168.class);
-        
-    	int nums = 27;
-        when(solution.convertToTitle(nums)).thenCallRealMethod();
+    	when(solution.convertToTitle(nums)).thenCallRealMethod();
+        //when(solution.convertToTitle(nums)).thenCallRealMethod();
         //or use thenReturn
-        assertEquals(4, solution.convertToTitle(nums));
+        assertEquals("A", solution.convertToTitle(nums));
+        
+    }
+    
+    @Test
+    public void testMock2() {
+        // Mock the Solution class
+    	int nums = 701;
+    	Solution168 solution = mock(Solution168.class);
+    	when(solution.convertToTitle(nums)).thenCallRealMethod();
+        //when(solution.convertToTitle(nums)).thenCallRealMethod();
+        //or use thenReturn
+        assertEquals("ZY", solution.convertToTitle(nums));
+        
     }
 }
