@@ -31,7 +31,7 @@ public class Solution3005Test {
         // Mock the Solution class
         Solution3005 solution = mock(Solution3005.class);
         
-        int[] nums = {1, 2, 2, 3, 1, 4};
+        //int[] nums = {1, 2, 2, 3, 1, 4};
         when(solution.maxFrequencyElements(new int[]{1, 2, 2, 3, 1, 4})).thenCallRealMethod();
         //or use thenReturn
         assertEquals(4, solution.maxFrequencyElements(new int[]{1, 2, 2, 3, 1, 4}));
